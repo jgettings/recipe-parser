@@ -17,4 +17,5 @@ app.listen(PORT, () => {
 // add eslint
 // make some tests
 // make it a real api
+// deploy it
 // add a readme
