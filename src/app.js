@@ -24,5 +24,6 @@ app.listen(port, () => {
 
 // make it a real api
 // deploy it
+// travis ci?
 // add a readme
 // swagger docs

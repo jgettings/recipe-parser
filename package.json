@@ -7,8 +7,8 @@
   "scripts": {
     "test": "npm run lint && mocha --reporter=nyan --r babel-register --recursive test",
     "lint": "eslint --report-unused-disable-directives --fix --ext js src test",
-    "start": "npm run test && babel-node src/app.js",
-    "dev" : "npm run test -- -watch"
+    "start": "babel-node src/app.js",
+    "dev": "npm run test -- -watch"
   },
   "author": "Jen Gettings",
   "license": "ISC",
