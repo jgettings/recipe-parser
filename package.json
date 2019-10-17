@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "Parse recipes from a url into a json object",
   "main": "app.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "babel-node src/app.js"
+    "test": "npm run lint",
+    "lint": "eslint --report-unused-disable-directives --fix --ext js src",
+    "start": "npm run test && babel-node src/app.js"
   },
   "author": "Jen Gettings",
   "license": "ISC",
@@ -14,5 +16,10 @@
     "babel-preset-es2015": "^6.24.1",
     "braces": "^3.0.2",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2"
   }
 }
